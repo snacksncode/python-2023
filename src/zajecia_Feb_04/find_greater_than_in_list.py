@@ -63,7 +63,7 @@ class TestFinder(unittest.TestCase):
         # sprawdzić jak długo to trwa
 
 
-s = 'abra kadabra'
+s = "abra kadabra"
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

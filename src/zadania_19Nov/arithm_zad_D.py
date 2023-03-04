@@ -35,5 +35,5 @@ class ArithTest(unittest.TestCase):
         self.assertFalse(is_arithmetic([0, -1, 0]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

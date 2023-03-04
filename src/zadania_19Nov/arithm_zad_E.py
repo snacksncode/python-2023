@@ -36,5 +36,5 @@ class AlmostArithTest(unittest.TestCase):
         self.assertFalse(is_almost_arithmetic([0, 1, 3, 6]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

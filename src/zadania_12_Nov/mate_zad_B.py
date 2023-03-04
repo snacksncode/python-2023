@@ -22,5 +22,5 @@ class MateZB_Test(unittest.TestCase):
         assert get_equal_capacity([2]) == 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

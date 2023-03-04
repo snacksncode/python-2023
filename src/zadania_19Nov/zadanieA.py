@@ -12,7 +12,7 @@ def solve_A_by_sort():
     w.sort()
     for idx in range(len(w) - 1):
         if w[idx] == w[idx + 1]:
-            print(f'powtórzone: {w[idx]}')
+            print(f"powtórzone: {w[idx]}")
             break
 
 
@@ -22,7 +22,7 @@ def solve_A_by_list():
         idx = randint(0, 99)
         w[idx] += 1
         if w[idx] > 1:
-            print(f'powtórzone {idx}')
+            print(f"powtórzone {idx}")
 
 
 def solve_A_attempt1():
@@ -31,7 +31,7 @@ def solve_A_attempt1():
     print(Counter(w))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # solve_A_by_sort()
     # solve_A_by_list()
     solve_A_attempt1()

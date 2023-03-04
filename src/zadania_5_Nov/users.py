@@ -5,6 +5,6 @@ def generate_user_names(prefix: str, min_id: int, max_id: int) -> list[str]:
     return names
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(list(range(5, 9)))
-    print(generate_user_names('user', 5, 10**5))
+    print(generate_user_names("user", 5, 10**5))

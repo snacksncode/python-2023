@@ -36,5 +36,5 @@ class BookingTest(unittest.TestCase):
         )  # dzień wylotu musi być przed dniem powrotu
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

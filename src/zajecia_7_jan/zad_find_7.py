@@ -1,7 +1,7 @@
 def sol1(n: int):
     count = 0
     for i in range(n):
-        if '7' not in str(i):
+        if "7" not in str(i):
             count += 1
     return count
 

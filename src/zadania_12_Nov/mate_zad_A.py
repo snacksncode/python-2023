@@ -39,5 +39,5 @@ class MateZA_Test(unittest.TestCase):
         assert res == 3
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

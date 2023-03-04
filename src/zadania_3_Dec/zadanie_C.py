@@ -17,5 +17,5 @@ class BookingTest(unittest.TestCase):
         self.assertTrue(is_cut_possible([10, 10], [9, 9]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

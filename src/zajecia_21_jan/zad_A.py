@@ -1,7 +1,7 @@
 from faker import Faker
 
 Faker.seed(111)
-fake = Faker('pl_PL')
+fake = Faker("pl_PL")
 
 unique_last_names = set([fake.last_name().lower() for _ in range(10**5)])
 
@@ -26,4 +26,4 @@ def get_name_autocompletion(prefix: str) -> list[str]:
     return candidates
 
 
-print(get_name_autocompletion('xi'))
+print(get_name_autocompletion("xi"))

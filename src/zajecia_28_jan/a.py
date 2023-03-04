@@ -1,14 +1,14 @@
 a = []
-a.append('aa')
-a.append('bb')
-a.append('zz')
+a.append("aa")
+a.append("bb")
+a.append("zz")
 
-w = ['x', 'y', 'z']
+w = ["x", "y", "z"]
 a.extend(w)
 print(a)
 
-f = ['abra', 'kadabra', 'hokus', 'pokus']
-print('-'.join(f))
+f = ["abra", "kadabra", "hokus", "pokus"]
+print("-".join(f))
 
 # zadanie -- wyliczyć ile ma być znaków '*' w rzędzie o nr. "x"
 # (dla x=0 ma być 1)

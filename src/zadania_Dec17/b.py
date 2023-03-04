@@ -1,4 +1,4 @@
-s = 'abdgga'
+s = "abdgga"
 
 m = s[0]
 for c in s:

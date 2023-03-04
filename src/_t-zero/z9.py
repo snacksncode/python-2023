@@ -15,7 +15,6 @@ def find_largest_sum(a: list[int]):
 
 
 class TestIt(unittest.TestCase):
-
     def test_one_elem(self):
         self.assertEquals(find_largest_sum([1]), 1)
 
@@ -32,4 +31,4 @@ class TestIt(unittest.TestCase):
         self.assertEquals(find_largest_sum([1, -2, 3, -4, 5, -4, 5, -2, 1]), 6)
 
     def test_5(self):
-        self.assertEquals(find_largest_sum([-1,-2,-3]), -1)
+        self.assertEquals(find_largest_sum([-1, -2, -3]), -1)

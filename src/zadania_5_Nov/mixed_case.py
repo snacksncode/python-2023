@@ -4,8 +4,8 @@ def is_mixed_case(s: str) -> bool:
     return (not only_lower) and (not only_upper)
 
 
-print(is_mixed_case('abc'))
-print(is_mixed_case('aBc'))
-print(is_mixed_case('AbC'))
-print(is_mixed_case('a'))
-print(is_mixed_case('ABC'))
+print(is_mixed_case("abc"))
+print(is_mixed_case("aBc"))
+print(is_mixed_case("AbC"))
+print(is_mixed_case("a"))
+print(is_mixed_case("ABC"))

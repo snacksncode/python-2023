@@ -15,7 +15,7 @@ print(np_a)
 gg = np_a * 2
 print(gg)
 
-maska = (np_a > 3)
+maska = np_a > 3
 print(maska)
 """
 [[False False False]
@@ -23,7 +23,7 @@ print(maska)
  """
 gg_masked = gg * maska
 print(gg_masked)
-print('-'*10)
+print("-" * 10)
 a = np.array([[0, 1], [1, 0]])
 b = np.array([[1, 2], [3, 4]])
 print(a)

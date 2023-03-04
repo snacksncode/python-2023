@@ -33,5 +33,5 @@ class BookingTest(unittest.TestCase):
         self.assertFalse(have_we_met([4, 4], [3, 3]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

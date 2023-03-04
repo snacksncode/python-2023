@@ -15,5 +15,5 @@ class SlitherTest(unittest.TestCase):
         self.assertTrue(get_final_snake_size(1, [2, 4, 6]), 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

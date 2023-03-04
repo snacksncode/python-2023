@@ -1,4 +1,4 @@
-users = ['A', 'B', 'C']
+users = ["A", "B", "C"]
 scores = [10, 80, 4]
 
 """

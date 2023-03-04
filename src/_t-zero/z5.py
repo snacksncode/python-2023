@@ -3,7 +3,6 @@ from z2 import reverse_number
 
 
 class TestReverse(unittest.TestCase):
-
     def test_simple1(self):
         self.assertEquals(reverse_number(2), 2)
 
@@ -14,8 +13,8 @@ class TestReverse(unittest.TestCase):
         self.assertEquals(reverse_number(12345678), 87654321)
 
     def test_simple4(self):
-        large1 = int('1'*100 + '2')
-        large2 = int('2' + '1'*100)
+        large1 = int("1" * 100 + "2")
+        large2 = int("2" + "1" * 100)
         self.assertEquals(reverse_number(large1), large2)
 
     def test_illegal_arg(self):
@@ -25,6 +24,3 @@ class TestReverse(unittest.TestCase):
             reverse_number(-1)
         with self.assertRaises(ValueError):
             reverse_number(10)
-
-
-

@@ -22,4 +22,4 @@ for liczba in pare_liczb:
         present += 1
 
 en = ts()
-print(f'elapsed: {en - st:.3f}s, present={present}')
+print(f"elapsed: {en - st:.3f}s, present={present}")

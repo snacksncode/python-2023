@@ -1,14 +1,14 @@
 def get_board(n: int) -> list[list[str]]:
-    row = ['.'] * n
+    row = ["."] * n
     board = [row.copy() for i in range(n)]
     return board
 
 
 b = get_board(5)
-b[0][0] = 'x'
+b[0][0] = "x"
 print(b)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     N = 10
     b = get_board(N)
     moves = [(1, 0), (0, 1), (-1, 0), (0, -1)]
@@ -25,7 +25,7 @@ if __name__ == '__main__':
             t = (t + 1) % 4
             continue
         position = new_pos
-        b[position[0]][position[1]] = '#'
+        b[position[0]][position[1]] = "#"
 
     for row in b:
-        print(''.join(row))
+        print("".join(row))

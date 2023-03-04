@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-img = Image.open('image1.jpeg')
+img = Image.open("image1.jpeg")
 print(img.size)
 img.show()
 # img2 = img.resize((300, 300))  # przeskalowujemy obrazek

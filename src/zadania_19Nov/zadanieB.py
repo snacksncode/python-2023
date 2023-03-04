@@ -16,7 +16,7 @@ def compute_probability(k, n, n_experiments):
     for i in range(n_experiments):
         if experyment(k, n):
             exp_true += 1
-    print(f'true in {exp_true} of {n_experiments} cases; p={exp_true / n_experiments}')
+    print(f"true in {exp_true} of {n_experiments} cases; p={exp_true / n_experiments}")
 
 
 compute_probability(30, 100, 10**4)

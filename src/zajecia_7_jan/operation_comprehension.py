@@ -19,7 +19,7 @@ print(z)
 z = [x**3 for x in w if x > 2]
 print(z)
 
-print('7' in str(747))
+print("7" in str(747))
 
 g = [0, 1] * 10
 

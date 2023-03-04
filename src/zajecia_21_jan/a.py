@@ -49,7 +49,7 @@ print(17 in gg)
 
 del gg[17]
 
-gg['kadabra'] = 19
+gg["kadabra"] = 19
 # gg[(1,2)] = 99
 # gg[(1,2)] += 1
 
@@ -58,19 +58,19 @@ s = json.dumps(gg)
 print(s)
 print(type(s))  # serializacja
 
-with open('../zajecia_7_jan/dane.txt', 'w') as f:
+with open("../zajecia_7_jan/dane.txt", "w") as f:
     f.write(s)
 
-with open('../zajecia_7_jan/dane.txt', 'r') as ff:
+with open("../zajecia_7_jan/dane.txt", "r") as ff:
     # lines = ff.readlines()
     # for line in lines:
     #     print(line)
     sss = ff.read()
-print('----> ', sss)
+print("----> ", sss)
 
 d = json.loads(sss)
 print(d)
 print(type(d))  # deserializacja
 
 for k, v in d.items():
-    print(f'key={k} value={v}')
+    print(f"key={k} value={v}")

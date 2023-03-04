@@ -1,3 +1,3 @@
-s = 'NATHANIEL x FORD'
+s = "NATHANIEL x FORD"
 
-print(s.split(' '))
+print(s.split(" "))
