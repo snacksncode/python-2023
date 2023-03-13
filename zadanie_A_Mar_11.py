@@ -20,3 +20,4 @@ a = [2, 5, 7, 9]
 b = [4, 8, 18, 27]
 
 print(check_numbers(a, b))
+
