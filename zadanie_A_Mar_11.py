@@ -6,6 +6,7 @@ zwrócić te krotności jako listę czyli tutaj -- wynik = [3,0,0,2]
 
 """
 
+
 def check_numbers(a: list[int], b: list[int]) -> list[int]:
     res = []
     for i in range(len(a)):
@@ -16,8 +17,8 @@ def check_numbers(a: list[int], b: list[int]) -> list[int]:
         res.append(counter)
     return res
 
+
 a = [2, 5, 7, 9]
 b = [4, 8, 18, 27]
 
 print(check_numbers(a, b))
-
