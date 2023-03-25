@@ -44,14 +44,16 @@ def visualize(sizes, times):
     x = sizes
     y = times
     linxx = [0.01 * x_ ** 1 for x_ in x]
+    alg_n_sqrt_n = [0.01 * x_ ** 1.5 for x_ in x]
     quadx = [0.01 * x_ ** 2 for x_ in x]
     cubex = [0.01 * x_ ** 3 for x_ in x]
 
     plt.plot(x, linxx, linestyle='dotted')
+    plt.plot(x, alg_n_sqrt_n, linestyle='dotted')
     plt.plot(x, quadx, linestyle='dotted')
     plt.plot(x, cubex, linestyle='dotted')
     plt.plot(x, y)
-    plt.legend(['O(N)', 'O(N**2)', 'O(N**3)', 'algorytm'], loc='upper left')
+    plt.legend(['O(N)', 'O(N sqrt N)', 'O(N**2)', 'O(N**3)', 'algorytm'], loc='upper left')
 
     plt.xlabel("Rozmiar danych")
     plt.ylabel("Czas wykonania (usec)")

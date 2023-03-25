@@ -21,9 +21,9 @@ def solve(a: list[int], b: list[int]) -> list[int]:
 def generate_data(data_size):
     seed(111)
     mx_num = 10 ** 4
-    a = [randint(0, mx_num) for _ in range(data_size)]
-    b = [randint(0, mx_num) for _ in range(data_size)]
-    return {"a": a, "b": b}
+    data_a = [randint(0, mx_num) for _ in range(data_size)]
+    data_b = [randint(0, mx_num) for _ in range(data_size)]
+    return {"a": data_a, "b": data_b}
 
 
 if __name__ == '__main__':
