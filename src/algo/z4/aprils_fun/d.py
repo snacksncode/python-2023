@@ -16,6 +16,8 @@ def has_non_unique_names(program_input: list[tuple[int, str]]) -> bool:
 
         ids.add(user_id)
 
+    return False
+
 
 print(f"Input: {program_input}")
 print(has_non_unique_names(program_input))
