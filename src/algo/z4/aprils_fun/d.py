@@ -7,7 +7,7 @@ program_input = [
 ]
 
 
-def has_non_unique_names(program_input: list[tuple[int, str]]) -> bool:
+def has_non_unique_ids(program_input: list[tuple[int, str]]) -> bool:
     ids = set()
     for entry in program_input:
         (user_id, _name) = entry
@@ -20,4 +20,4 @@ def has_non_unique_names(program_input: list[tuple[int, str]]) -> bool:
 
 
 print(f"Input: {program_input}")
-print(has_non_unique_names(program_input))
+print(has_non_unique_ids(program_input))
