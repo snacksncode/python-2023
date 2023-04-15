@@ -5,8 +5,8 @@ from collections import defaultdict
 # Zadanie A + Testy
 
 
-def is_unique_list(input: list):
-    return len(input) == len(list(set(input)))
+def is_unique_list(elems: list):
+    return len(elems) == len(list(set(elems)))
 
 
 tests = [
@@ -24,14 +24,13 @@ print('\n-----------\n')
 # Zadanie B + Testy
 
 
-def find_duplicates(input: list):
+def find_duplicates(elems: list):
     hash_map = defaultdict(lambda: 0)
-    for entry in input:
+    for entry in elems:
         hash_map[entry] = hash_map[entry] + 1
 
     duplicates = []
-    for entry in hash_map:
-        times_appears = hash_map[entry]
+    for (entry, times_appears) in hash_map.items():
         if times_appears > 1:
             duplicates.append(entry)
 
@@ -43,7 +42,7 @@ def find_duplicates(input: list):
 tests_2 = [
     ['2', '2', '3'],
     ['a', 'aa', 'aaa'],
-    [1, 2, 2],
+    [1, 2, 2, 2, 3, 3],
     ['json', 'dumps', 'is', 'cool']
 ]
 
