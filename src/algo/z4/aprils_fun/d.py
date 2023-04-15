@@ -9,8 +9,7 @@ program_input = [
 
 def has_non_unique_ids(program_input: list[tuple[int, str]]) -> bool:
     ids = set()
-    for entry in program_input:
-        (user_id, _name) = entry
+    for user_id, _name in program_input:
         if user_id in ids:
             return True
 
