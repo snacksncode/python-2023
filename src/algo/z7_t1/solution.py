@@ -14,7 +14,35 @@ aba←→ac -> abac
 
 """
 
+from numpy import append
+
 
 def split_to_syllables(word: str) -> list[str]:
-    #todo: your solution here
-    return ["aa", "ab", "bb"]
+    new_word = []
+    for i in range(len(word)-1):
+        s = word[i] + word[i+1]
+        new_word.append(s)
+    return new_word
+
+word = "abba"
+result = split_to_syllables(word)
+print(result)
+
+
+
+
+
+
+
+
+
+
+# def split_to_syllables(word: str) -> list[str]:
+#     #todo: your solution here
+#     return ["aa", "ab", "bb"]
+
+
+
+
+
+

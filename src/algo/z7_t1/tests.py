@@ -1,6 +1,8 @@
 import unittest
 from solution import split_to_syllables
 from random import randint
+from solution import result
+
 
 class KeyLockTest(unittest.TestCase):
 
@@ -21,6 +23,9 @@ class KeyLockTest(unittest.TestCase):
 
     def test_6(self):
         self.assertEquals(split_to_syllables("aabb"), ["aa", "ab", "bb"])
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
 
 
 
