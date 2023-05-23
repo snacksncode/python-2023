@@ -4,7 +4,7 @@ from random import randint
 from solution import result
 
 
-class KeyLockTest(unittest.TestCase):
+class SyllablesTest(unittest.TestCase):
 
     def test_1(self):
         self.assertEquals(split_to_syllables("ab"), ["ab"])
