@@ -15,11 +15,20 @@ b = [1, 5, 5]  (wszystkie są nieparzyste, przy czym a[0]=b[0], a[1]=b[1], b[2] 
 lub
 b = [1, 5, 1]  (teraz na ostatniej pozycji odjęliśmy 5, czyli a[1])
 
-
-
 """
 
 
 def equalize_parity(a: list[int]) -> bool:
-    # todo: your solution here
-    return True
+    a.sort()
+    parity_list = []
+
+    for i in range(len(a)):
+
+        if a[i] % 2 == 0:
+            parity_list.append(a[i])
+        
+    if len(parity_list) == len(a) or a[0] % 2 !=0:
+        return True
+    else:
+        return False
+    

@@ -3,7 +3,7 @@ import unittest
 from solution import equalize_parity
 
 
-class SyllablesTest(unittest.TestCase):
+class NumbersParityTest(unittest.TestCase):
 
     def test_1(self):
         self.assertTrue(equalize_parity([1, 1]))
@@ -28,4 +28,4 @@ class SyllablesTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
