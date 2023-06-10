@@ -8,3 +8,8 @@ def some_data(s: str) -> list:
     a = [len(s)]
     [a.append(a[-1] + 1) if i == "<" else a.append(a[-1] - 1) for i in s]
     return a
+
+
+# ONE-LINER BABY, credits @Max
+def some_data2(s: str) -> list:
+    return [e := len(s)] + [e := e + (1 if v == "<" else -1) for v in s]
